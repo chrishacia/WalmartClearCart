@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart Cart Clearer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            margin: 0;
+            background-color: #f9f9f9;
+            width: 300px;
+            /* Adjust the width as needed */
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #startButton {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #startButton:hover {
+            background-color: #45a049;
+        }
+
+        #stopButton {
+            background-color: #f44336;
+            color: white;
+        }
+
+        #stopButton:hover {
+            background-color: #e53935;
+        }
+
+        #buttonCount {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        #disclaimer {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #disclaimerText {
+            display: none;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #555;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="buttonCount">Buttons found: <span id="count">0</span></div>
+    <button id="startButton">Start</button>
+    <button id="stopButton" disabled>Stop</button>
+    <div id="disclaimer">Disclaimer</div>
+    <div id="disclaimerText">
+        <p>This extension automates interactions that a user could perform manually. However, using this extension may
+            violate Walmart's Terms of Service. Automated interactions, even those that mimic manual user actions, could
+            be detected by Walmart and may result in your account being flagged, suspended, or banned. Use this
+            extension at your own risk.</p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
